@@ -3,8 +3,12 @@ import './App.css';
 
 const logo = require('./logo.svg');
 
+export interface AppStateProps {
+  enthusiasmLevel: number;
+  name: string;
+}
 
-class App extends React.Component<{}, object> {
+class App extends React.Component<AppStateProps, {}> {
   render() {
     return (
       <div className="App">
